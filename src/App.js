@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Reservation from './components/Reservation';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -10,8 +11,11 @@ function App() {
         < Navbar />
         <div className="content">
           <Switch>
-            <Route path = "/">
+            <Route exact path = "/">
               < Home />
+            </Route>
+            <Route path = "/reservation">
+              < Reservation />
             </Route>
           </Switch>
         </div>
