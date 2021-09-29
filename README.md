@@ -1,6 +1,5 @@
 # Clone the repository
 $ git clone https://github.com/LanCheeOnn/computing_project.git
-$ cd my-app
 
 # Install the dependencies
 $ npm install
